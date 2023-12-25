@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      try {
+        console.log("hi");
+        console.log1("2");
+        alert1("hello");
+      } catch (e) {
+        console.log(e);
+      }
+      console.log("hello");
+      let age = "";
+      try {
+        let age = Number(prompt("plese enter your age:"));
+        if (age <= 0 || age > 100) {
+          throw "you most enter valid number";
+          //   console.log("you most enter valid number");
+        } else {
+          console.log(`your age is ${age}`);
+        }
+      } catch (e) {
+        console.log("error " + e);
+      } finally {
+        if (age >= 25 && age <= 40) {
+          console.log("you can register");
+        } else {
+          console.log("you cant register");
+        }
+      }
+    </script>
+  </body>
+</html>
